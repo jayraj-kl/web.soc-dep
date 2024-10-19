@@ -18,7 +18,7 @@ export const CreateProblem = ({ socket, roomId }: { socket: any; roomId: string 
     { id: 2, title: "" },
     { id: 3, title: "" }
   ])
-  const [leaderboard, setLeaderboard] = useState<any[]>([])
+  const [, setLeaderboard] = useState<any[]>([])
   const [fileKey, setFileKey] = useState(Date.now())
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
