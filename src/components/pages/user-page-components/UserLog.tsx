@@ -15,7 +15,7 @@ const UserLoggedin = ({ name, code }: { name: any; code: any; }) => {
     const [currentProblemIndex, setCurrentProblemIndex] = useState(0)
 
     useEffect(() => {
-        const socket = io("http://3.109.153.195:3000/");
+        const socket = io("http://ec2-3-109-153-195.ap-south-1.compute.amazonaws.com:3000/");
         setSocket(socket)
 
         socket.on("connect", () => {
